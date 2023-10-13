@@ -9,7 +9,6 @@ The "Home" project acts as the command center for your smart home ecosystem, ena
 - Control lighting, thermostats, and appliances.
 - Monitor security cameras and sensors.
 - Automate routines and scenarios.
-- Interface with voice assistants like Alexa or Google Assistant.
 - And much more!
 
 ## Prerequisites
@@ -23,5 +22,15 @@ Before you begin, ensure you have the following prerequisites:
 ## Installation
 
 1. **Clone the Project**
+    git clone https://github.com/MarikTik/Home.git
+2. **Create Virtual Environment**
+    python3 -m venv venv
+3. **Activate the Environment and Download Dependencies**
+    source venv/bin/activate
+    pip install -r requirements.txt
+4. **Run the APP**
+    export FLASK_APP=main.py
+    flask run --host 0.0.0.0
 
-   You can clone this project to your Raspberry Pi using Git:
+5. **Post Installation**
+    ./init.sh
