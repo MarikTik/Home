@@ -31,6 +31,5 @@ Before you begin, ensure you have the following prerequisites:
 4. **Run the APP**
     export FLASK_APP=main.py
     flask run --host 0.0.0.0
-
 5. **Post Installation**
     ./init.sh
