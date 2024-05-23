@@ -1,0 +1,3 @@
+[submodule "light-control"]
+	path = light-control
+	url = https://github.com/MarikTik/light-control.git
