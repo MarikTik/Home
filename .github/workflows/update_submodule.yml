@@ -1,0 +1,23 @@
+name: Update Home submodule
+
+on:
+  push:
+    paths:
+      - 'light-control/**'
+
+jobs:
+  update-submodule:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: Update light-control submodule reference
+        run: |
+          git submodule update --remote light-control
+          git add light-control
+          git commit -m "Automated update of light-control submodule reference"
+          git push origin main
